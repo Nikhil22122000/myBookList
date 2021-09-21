@@ -18,7 +18,7 @@ class UI{
         <th>${book.title}</th>
         <th>${book.author}</th>
         <th>${book.isbn}</th>
-        <td><a href='#' class="btn btn-danger btn-sm delete">X</td>
+         <td><a href='#' class="btn btn-danger btn-sm delete">X</td>
         `;
         list.appendChild(row);
     }
@@ -63,7 +63,7 @@ class Store{
     }
     static removeBook(isbn){
       const books=Store.getBooks();
-
+        
       books.forEach((book,index)=>{
           if(book.isbn===isbn)
             books.splice(index,1);
